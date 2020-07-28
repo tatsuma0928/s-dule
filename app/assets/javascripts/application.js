@@ -3,7 +3,6 @@
 //= require fullcalendar
 
 $(function () {
-  // 画面遷移を検知
   $(document).on('turbolinks:load', function () {
       if ($('#calendar').length) {
 
@@ -60,4 +59,15 @@ $(function () {
           });
       }
   });
+  function eventCalendar() {
+      return $('#calendar').fullCalendar({});
+  };
+  function clearCalendar() {
+      $('#calendar').html('');
+  };
 });
+
+$(document).on('turbolinks:load', function () {
+  eventCalendar();
+});
+$(document).on('turbolinks:before-cache', clearCalendar);
