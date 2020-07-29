@@ -1,18 +1,18 @@
 %p#notice= notice
 
 %p
-  %b Title:
+  %b 予定:
   = @event.title
 %p
-  %b Body:
+  %b 内容:
   = @event.body
 %p
-  %b Start date:
-  = @event.start_date
+  %b 開始時間:
+  = @event.start_date.strftime("%Y-%m-%d %H:%M")
 %p
-  %b End date:
-  = @event.end_date
+  %b 終了時間:
+  = @event.end_date.strftime("%Y-%m-%d %H:%M")
 
-= link_to 'Edit', edit_event_path(@event)
-\|
-= link_to 'Back', events_path
+= link_to '編集', edit_event_path(@event)
+
+= link_to '戻る', events_path
