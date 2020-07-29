@@ -7,16 +7,16 @@
           %li= message
 
   .field
-    = f.label :title
+    = f.label :予定
     = f.text_field :title
   .field
-    = f.label :body
+    = f.label :内容
     = f.text_field :body
   .field
-    = f.label :start_date
+    = f.label :開始時間
     = f.datetime_select :start_date
   .field
-    = f.label :end_date
+    = f.label :終了時間
     = f.datetime_select :end_date
   .actions
-    = f.submit 'Save'
+    = f.submit '保存'
