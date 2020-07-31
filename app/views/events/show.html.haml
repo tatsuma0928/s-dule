@@ -1,18 +1,18 @@
+%body.show-main
 %p#notice= notice
-
-%p
+%p.show
   %b 予定:
   = @event.title
-%p
+%p.show
   %b 内容:
   = @event.body
-%p
+%p.show
   %b 開始時間:
   = @event.start_date.strftime("%Y-%m-%d %H:%M")
-%p
+%p.show
   %b 終了時間:
   = @event.end_date.strftime("%Y-%m-%d %H:%M")
 
-= link_to '編集', edit_event_path(@event)
+= link_to '編集', edit_event_path(@event), { class: "short-btn"}
 
-= link_to '戻る', events_path
+= link_to '戻る', events_path, { class: "short-btn"}

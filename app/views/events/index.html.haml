@@ -1,28 +1,30 @@
-%h1 予定一覧
+%body.index-main
 
-%table
+%h1.index-title 予定一覧
+
+%table.events-table
   %thead
-    %tr
-      %th 予定
-      %th 内容
-      %th 開始時間
-      %th 終了時間
-      %th
-      %th
-      %th
+    %tr.events-table__position
+      %th.events-table__position--list 予定
+      %th.events-table__position--list 内容
+      %th.events-table__position--list 開始時間
+      %th.events-table__position--list 終了時間
+      %th.events-table__position--list
+      %th.events-table__position--list
+      %th.events-table__position--list
 
   %tbody
     - @events.each do |event|
-      %tr
-        %td= event.title
-        %td= event.body
-        %td= event.start_date.strftime("%Y-%m-%d %H:%M")
-        %td= event.end_date.strftime("%Y-%m-%d %H:%M")
-        %td= link_to '一覧', event
-        %td= link_to '編集', edit_event_path(event)
-        %td= link_to '削除', event, method: :delete, data: { confirm: 'Are you sure?' }
+      %tr.events-table__position
+        %td.events-table__position--list= event.title
+        %td.events-table__position--list= event.body
+        %td.events-table__position--list= event.start_date.strftime("%Y-%m-%d %H:%M")
+        %td.events-table__position--list= event.end_date.strftime("%Y-%m-%d %H:%M")
+        %td.events-table__position--list= link_to '一覧', event
+        %td.events-table__position--list= link_to '編集', edit_event_path(event)
+        %td.events-table__position--list= link_to '削除', event, method: :delete, data: { confirm: 'Are you sure?' }
 
 %br
 
-= link_to '新規予定', new_event_path
-= link_to "ログアウト", destroy_user_session_path, method: :delete
+= link_to '新規予定', new_event_path, { class: "btn"}
+= link_to "ログアウト", destroy_user_session_path, { method: :delete, class: "btn" }
