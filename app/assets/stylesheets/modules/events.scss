@@ -1,0 +1,102 @@
+// events.index.html.haml
+.index-main {
+  background-image: url("/images/s-dule1.jpg");
+  height: 100vh;
+  background-color: skyblue;
+  .index-title {
+    color: white;
+    height: 50px;
+    margin-left: 30px;
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .events-table {
+    background-color: limegreen;
+    margin: 20px 30px;
+    width: 95vw;
+    font-size: 15px;
+    &__position {
+      height: 50px;
+      &--list {
+        color: white;
+        border: 1px solid black;
+        padding-left: 10px;
+        text-decoration: none;
+      }
+    }
+  }
+  .btn {
+    font-weight: bold;
+    display: block;
+    margin: 0 0 15px 30px;
+    border: 1px solid skyblue;
+    color: black;
+    background-color: skyblue;
+    width: 100px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+
+.box-size {
+  height: 10px;
+}
+
+
+// events._form.html.haml
+.edit-main {
+  color: white;
+  background-image: url("/images/s-dule1.jpg");
+  height: 100vh;
+  background-color: skyblue;
+  .edit-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .edit_event {
+    font-size: 20px;
+    height: 300px;
+    .field {
+      padding-top: 10px;
+      font-size: 20px;
+      margin: 2px 0;
+      height: 50px;
+    }
+  }
+  .short-btn {
+    display: block;
+    margin: 0 0 15px 30px;
+    border: 1px solid skyblue;
+    color: black;
+    background-color: skyblue;
+    width: 50px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+// evets.show.html.haml
+.show-main {
+  color: white;
+  background-image: url("/images/s-dule1.jpg");
+  height: 100vh;
+  background-color: skyblue;
+  .show {
+    padding: 15px 0 0 30px;
+    font-size: 20px;
+    margin: 2px 0;
+    height: 50px;
+  }
+  .short-btn {
+    display: block;
+    margin: 0 0 15px 30px;
+    border: 1px solid skyblue;
+    color: black;
+    background-color: skyblue;
+    width: 50px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}

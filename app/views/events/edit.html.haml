@@ -1,7 +1,8 @@
-%h1 予定編集
+%body.edit-main
+%h1.edit-title 予定編集
 
 = render 'form'
 
-= link_to '一覧', @event
+= link_to '一覧', @event, { class: "short-btn"}
 
-= link_to '戻る', events_path
+= link_to '戻る', events_path, { class: "short-btn"}
