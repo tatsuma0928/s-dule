@@ -1,5 +1,6 @@
-%h1 新規予定
+%body.new-main
+%h1.new-title 新規予定
 
 = render 'form'
 
-= link_to '戻る', events_path
+= link_to '戻る', events_path, { class: "short-btn"}

@@ -40,9 +40,6 @@
   }
 }
 
-.box-size {
-  height: 10px;
-}
 
 
 // events._form.html.haml
@@ -52,6 +49,8 @@
   height: 100vh;
   background-color: skyblue;
   .edit-title {
+    height: 50px;
+    padding: 20px 0 0 30px;
     color: white;
     font-size: 30px;
     font-weight: bold;
@@ -60,13 +59,20 @@
     font-size: 20px;
     height: 300px;
     .field {
-      padding-top: 10px;
+      padding: 5px 0 0 30px;
       font-size: 20px;
       margin: 2px 0;
       height: 50px;
+      select{
+        height: 30px;
+      }
     }
+    .actions {
+      padding-left: 30px;
+    };
   }
   .short-btn {
+    height: 25px;
     display: block;
     margin: 0 0 15px 30px;
     border: 1px solid skyblue;
@@ -88,6 +94,42 @@
     font-size: 20px;
     margin: 2px 0;
     height: 50px;
+  }
+  .short-btn {
+    display: block;
+    margin: 0 0 15px 30px;
+    border: 1px solid skyblue;
+    color: black;
+    background-color: skyblue;
+    width: 50px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+
+// evets.new.html.haml
+.new-main {
+  color: white;
+  background-image: url("/images/s-dule1.jpg");
+  height: 100vh;
+  background-color: skyblue;
+  .new-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .new_event {
+    font-size: 20px;
+    height: 300px;
+    .field {
+      padding-top: 10px;
+      font-size: 20px;
+      margin: 2px 0;
+      height: 50px;
+      select{
+        height: 30px;
+      }
+    }
   }
   .short-btn {
     display: block;
