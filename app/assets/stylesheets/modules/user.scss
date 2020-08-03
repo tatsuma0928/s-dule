@@ -1,12 +1,16 @@
+.user-login {
+  background-image: url("/images/s-dule2.jpg");
+  height: 100hv;
+}
+.user-create {
+  background-image: url("/images/s-dule2.jpg");
+  height: 100hv;
+}
 .AccountPage {
+  color: lightcoral;
   width: 980px;
-  margin: 60px auto;
+  margin: 0px auto;
   padding: 60px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  display: flex;
-  justify-content: space-between;
 }
 .AccountPage__title {
   width: 50%;
@@ -29,7 +33,7 @@
   .Button {
     margin-top: 40px;
     color: #fff;
-    background-color: #ccc;
+    background-color: #38aef0;
   }
 }
 
@@ -56,6 +60,8 @@
   &__input--normal {
     input {
       box-sizing: border-box;
+      border: solid blue;
+      border-radius: 100px; 
       width: 100%;
       padding: 10px;
       letter-spacing: 1px;
