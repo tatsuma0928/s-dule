@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2020_07_28_075526) do
 
   # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+  enable_extension "postgresql"
 
   create_table "events", force: :cascade do |t|
     t.string "title"
