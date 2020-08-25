@@ -9,3 +9,33 @@
  *= require_self
  *= require fullcalendar
  */
+
+
+.events-head {
+  display: flex;
+  width: 100%;
+  &__title{
+    width: 15%;     
+  }
+  &__body{
+    width: 30%
+  }
+  &__start-date{
+    width: 20%;
+  }
+  &__end-date{
+    width: 20%;
+  }
+  &__show-btn{
+    width: 5%;
+  }
+  &__edit-btn{
+    width: 5%;
+  }
+  &__destroy-btn{
+    width: 5%;
+  }
+}
+.events-body {
+  
+}
